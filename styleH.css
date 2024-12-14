@@ -1,0 +1,545 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: url('PSR.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+
+}
+.content-wrapper {
+  margin-top: 75px;
+}
+
+.box {
+  background-color: #f2f2f2; /* Light gray background */
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  left: 20px;
+  color: rgb(99, 96, 96);
+}
+
+#conter{
+  background-color: #c2c1c1; /* Light gray background */
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  left: 20px;
+  color: rgb(99, 96, 96);
+
+}
+
+.box h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+  color: rgb(99, 96, 96);
+}
+
+
+.box ul {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 20px;
+  left: 20px;
+  font-size: 20px;
+}
+
+ .giver-1 {
+  color: rgb(99, 96, 96);
+  width: fit-content;
+  border-radius: 15px; 
+  font-size: 25px;
+  text-align: center;
+  margin-left:25px;
+  padding: 20px 40px;
+  font-family: 'Product Sans';
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.giver {
+  color: rgb(99, 96, 96);
+  width: fit-content;
+  border-radius: 15px; 
+  font-size: 25px;
+  text-align: center;
+  margin-left:55px;
+  padding: 20px 40px;
+  font-family: 'Product Sans';
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.giver:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.01);
+}
+.giver-1:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.01);
+}
+.c-box {
+  height: 220px;
+  margin-left: 150px;
+  background-color: #c2c1c1;
+  display: inline-block;
+}
+.c-box-1{
+  height: 220px;
+  margin-left: 120px;
+  background-color: #f2f2f2;
+  display: inline-block;
+}
+
+
+
+
+.header-container {
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  color: rgb(99, 96, 96);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-text {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 15px;
+  font-family: 'Product Sans';
+  color: rgb(99, 96, 96);
+}
+
+.content {
+  margin-top: 125px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 100px;
+  text-align: left;
+  padding-left: 15px;
+  font-family: 'Product Sans';
+  color: rgb(99, 96, 96);
+}
+#rebu{font-weight: normal; font-size: 45px;}
+
+.content-1 {
+  margin-top: 25px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-right: 100px;
+  text-align: right;
+  padding-left: 15px;
+  font-family: 'Product Sans';
+  color: rgb(99, 96, 96);
+}
+
+.imagsil {
+  opacity: 0.8;
+  float: right;
+  height: 300px;
+  margin-right: 45px;
+}
+
+.imagsil-1 {
+  opacity: 0.8;
+  float: left;
+  height: 300px;
+  margin-left: 45px;
+}
+
+.give {
+  color: rgb(99, 96, 96);
+  width: fit-content;
+  border-radius: 15px;
+  margin-top: 300px;
+  font-size: 40px;
+  margin-bottom: 125px;
+  text-align: left;
+  margin-left: 125px;
+  padding: 20px 40px;
+  font-family: 'Product Sans';
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.give:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.01);
+}
+
+.give-1 {
+  color: rgb(99, 96, 96);
+  width: fit-content;
+  border-radius: 15px;
+  margin-top: 300px;
+  font-size: 40px;
+  margin-bottom: 225px;
+  float: right;
+  margin-right: 125px;
+  padding: 20px 40px;
+  font-family: 'Product Sans';
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.give-1:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.01);
+}
+
+.icon-bar {
+  float: right;
+  width: 100%;
+  background-color: #f2f2f2;
+  overflow: auto;
+  text-align: right;
+}
+.tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 120%; /* Position tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Prevent text from wrapping */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-bar a {
+  float: right;
+  width: 95px;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(99, 96, 96);
+  font-size: 20px;
+}
+.icon-bar a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-bar a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.active {
+  background-color: #f2f2f2;
+}
+.dropdown-wrap {
+  position: fixed;
+  height: auto;
+  top: 50%;
+  right: 10px; /* Aligned to the extreme right */
+  transform: translateY(-50%); /* Only vertical centering needed */
+  background: rgb(99, 96, 96);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  z-index: 1001;
+  display: none;
+}
+
+.dropdown-form {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   /* Ensures alignment of all fields */
+}
+
+.dropdown-form input {
+  margin: 0 auto;  /* Remove side margin for alignment */
+  padding: 15px; /* Adjust for better look */
+  font-size: 16px;
+  border-radius: 5px;
+  width: 400px;
+  border: 1px solid #ced4da;
+  margin-bottom: 30px;
+}
+
+.dropdown-form button {
+  padding: 15px;
+  margin: 0 auto;  /* Center alignment */
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.dropdown-form button:hover {
+  background-color: #555;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3); /* Light transparent overlay */
+  backdrop-filter: blur(4px); /* Apply the blur effect */
+  display: none; /* Initially hidden */
+  z-index: 1000; /* Below dropdown */
+}
+.otp-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the OTP field and the button */
+  margin-top: 10px;
+}
+
+.otp-field {
+  width: 330px; /* Reduce width of the OTP field */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.verify-btn {
+  padding: 5px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:70px;
+}
+
+.verify-btn:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Ensures consistent spacing between elements */
+  height: 50px;
+  margin: 0 auto;   /* Remove side margin for alignment */
+  padding: 15px; /* Adjust for better look */
+  font-size: 16px;
+  border-radius: 5px;
+  max-width: 400px; 
+  border:1px solid  white; 
+  background-color: white;
+  margin-bottom: 30px;
+  /* Sets the consistent height for container */
+}
+
+.custom-select {
+  position: relative;
+  width: 400px;
+  height:50px;
+}
+
+.select-box {
+  height: 50px;
+  width: 100%;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 5px; /* Consistent with other rounded elements */
+  color: grey;
+  font-size: 16px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.selected-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.tag {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+}
+
+.remove-tag {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.arrow {
+  margin: 0 10px;
+    position: absolute; /* Position independently */
+    right: 15px; /* Distance from the right edge */
+    font-size: 20px; /* Adjust arrow size */
+    color: #fff; /* Arrow color */
+}
+
+.fa-angle-down {
+  color: #404040;
+  font-size: 30px;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #1b1a1a;
+  border: 1px solid #ced4da;
+  max-height: 225px;
+  overflow-y: auto;
+  z-index: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.open .options {
+  display: block;
+}
+
+.option-search-tags {
+  position: relative; /* Enables absolute positioning of the clear button */
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.search-tags {
+  width: calc(100% - 50px);
+  border: none;
+  outline: none;
+  height: 50px; /* Matches container height */
+  font-size: 16px;
+  padding-right: 60px; /* Leaves space for the clear button */
+  box-sizing: border-box; /* Ensures padding is within element size */
+}
+
+.clear {
+  vertical-align: middle;
+  position: absolute;
+  top: 0; /* Aligns with the top of the search bar */
+  right: 0; /* Aligns to the far right */
+  height: 50px; /* Matches the search bar height */
+  width: 50px; /* Ensures square shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px; /* Adjusts icon size */
+  color: #333; /* Icon color */
+}
+
+.option {
+  padding: 12px;
+  cursor: pointer;
+  color:white;
+}
+
+.option.active {
+  background-color: #f2f2f2;
+  color: #000;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tag:hover,
+.option:hover {
+  background-color: #eaeaea;
+  color:black;
+}
+
+.no-result-message {
+  padding: 0 0 12px 12px;
+}
+
+.error {
+  color: #ff1a2a;
+  margin-top: 8px;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-text {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .icon-bar {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .icon-bar a {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  #rebu{font-weight: normal; font-size: 20px;}
+
+  .content, .content-1 {
+    margin-top: 25px;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+    display: block;
+  }
+
+  .imagsil, .imagsil-1 {
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    float: none;
+    width: 50%;
+  }
+
+  .give, .give-1 {
+    font-size: 24px;
+    margin: 20px auto;
+    padding: 15px 30px;
+    float: none;
+    text-align: center;
+  }
+
+  .icon-bar a {
+    width: 75px;
+    font-size: 18px;
+  }
+}
+
